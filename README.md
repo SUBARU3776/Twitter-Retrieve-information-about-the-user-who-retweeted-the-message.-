@@ -9,6 +9,7 @@
 - レスポンスヘッダーから次のページのトークンを取得し、次のページが存在する場合は再度APIエンドポイントにアクセスします。
 - 取得可能な情報が無くなるまで繰り返します。
 - 取得した情報をcsvファイルに保存します。<br>
+※ Python 3.11.1での動作確認済み
 *********************************************************************************************************************************
 ### This script is a Python script that retrieves information about users who retweeted a given tweet and writes that information to a CSV file.
 ##### Specifically, the process is as follows
@@ -17,4 +18,5 @@
 - Retrieve up to 200 items of information at a time.
 - The next page token is obtained from the response header, and the API endpoint is accessed again if the next page exists.
 - Repeat until there is no more information available.
-- Saves the acquired information in a csv file.
+- Saves the acquired information in a csv file.<br>
+※ tested the operation with Python 3.11.1
